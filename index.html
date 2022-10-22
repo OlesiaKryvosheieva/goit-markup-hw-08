@@ -47,40 +47,45 @@
               <use href="./images/sprite.svg#icon-menu-close"></use>
             </svg>
           </button>
+          <div class="nav-wrap">
+            <nav>
+              <ul class="site-nav list">
+                <li class="item">
+                  <a href="" class="link current">Студія</a>
+                </li>
+                <li class="item">
+                  <a href="./portfolio.html" class="link">Портфоліо</a>
+                </li>
+                <li class="item"><a href="" class="link">Контакти</a></li>
+              </ul>
+            </nav>
 
-          <nav>
-            <ul class="site-nav list">
-              <li class="item"><a href="" class="link current">Студія</a></li>
+            <ul class="contact-nav list">
               <li class="item">
-                <a href="./portfolio.html" class="link">Портфоліо</a>
+                <a href="mailto:info@devstudio.com" class="link mail">
+                  <svg class="mail-icon" width="16" height="12">
+                    <use href="./images/sprite.svg#icon-mail"></use>
+                  </svg>
+                  info@devstudio.com
+                </a>
               </li>
-              <li class="item"><a href="" class="link">Контакти</a></li>
+              <li class="item">
+                <a href="tel:+380961111111" class="link phone">
+                  <svg class="smartphone-icon" width="10" height="16">
+                    <use href="./images/sprite.svg#icon-smartphone"></use>
+                  </svg>
+                  +38 096 111 11 11
+                </a>
+              </li>
+
+              <ul class="header-social list">
+                <li class="item"><a href="" class="link">Instagram</a></li>
+                <li class="item"><a href="" class="link">Twitter</a></li>
+                <li class="item"><a href="" class="link">Facebook</a></li>
+                <li class="item"><a href="" class="link">LinkedIn</a></li>
+              </ul>
             </ul>
-          </nav>
-          <ul class="contact-nav list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link mail">
-                <svg class="mail-icon" width="16" height="12">
-                  <use href="./images/sprite.svg#icon-mail"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item">
-              <a href="tel:+380961111111" class="link phone">
-                <svg class="smartphone-icon" width="10" height="16">
-                  <use href="./images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="header-social list">
-            <li class="item"><a href="" class="link">Instagram</a></li>
-            <li class="item"><a href="" class="link">Twitter</a></li>
-            <li class="item"><a href="" class="link">Facebook</a></li>
-            <li class="item"><a href="" class="link">LinkedIn</a></li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -203,33 +208,19 @@
           <h2 class="crew__title">Наша команда</h2>
           <ul class="member list">
             <li class="member__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/product-designer-270.jpg    1x,
-                    ./images/product-designer@2x-540.jpg 2x
-                  "
-                  media="(min-width:360px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/product-designer_tablet-354.jpg    1x,
-                    ./images/product-designer_tablet@2x-708.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/product-designer_mobile-450.jpg    1x,
-                    ./images/product-designer_mobile@2x-900.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-
-                <img src="./images/product-designer-270.jpg" alt="Фотографія" />
-              </picture>
+              <img
+                srcset="
+                  ./images/product-designer-270.jpg           270w,
+                  ./images/product-designer_tablet-354.jpg    354w,
+                  ./images/product-designer_mobile-450.jpg    450w,
+                  ./images/product-designer@2x-540.jpg        540w,
+                  ./images/product-designer_tablet@2x-708.jpg 708w,
+                  ./images/product-designer_mobile@2x-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
+                src="./images/product-designer-270.jpg"
+                alt="Фотографія"
+              />
 
               <div class="team">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
@@ -271,36 +262,19 @@
             </li>
 
             <li class="member__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/frontend-developer-270.jpg    1x,
-                    ./images/frontend-developer@2x-540.jpg 2x
-                  "
-                  media="(min-width:360px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/frontend-developer_tablet-354.jpg    1x,
-                    ./images/frontend-developer_tablet@2x-708.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/frontend-developer_mobile-450.jpg    1x,
-                    ./images/frontend-developer_mobile@2x-900.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-
-                <img
-                  src="./images/frontend-developer-270.jpg"
-                  alt="Фотографія"
-                />
-              </picture>
+              <img
+                srcset="
+                  ./images/frontend-developer-270.jpg           270w,
+                  ./images/frontend-developer_tablet-354.jpg    354w,
+                  ./images/frontend-developer_mobile-450.jpg    450w,
+                  ./images/frontend-developer@2x-540.jpg        540w,
+                  ./images/frontend-developer_tablet@2x-708.jpg 708w,
+                  ./images/frontend-developer_mobile@2x-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
+                src="./images/frontend-developer-270.jpg"
+                alt="Фотографія"
+              />
 
               <div class="team">
                 <h3 class="team__title">Ольга Рєпіна</h3>
@@ -342,33 +316,21 @@
             </li>
 
             <li class="member__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/marketing-270.jpg    1x,
-                    ./images/marketing@2x-540.jpg 2x
-                  "
-                  media="(min-width:360px)"
-                />
+              <img
+                srcset="
+                  ./images/marketing-270.jpg           270w,
+                  ./images/marketing_tablet-354.jpg    354w,
+                  ./images/marketing_mobile-450.jpg    450w,
+                  ./images/marketing@2x-540.jpg        540w,
+                  ./images/marketing_tablet@2x-708.jpg 708w,
+                  ./images/marketing_mobile@2x-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
+                src="./images/frontend-developer-270.jpg"
+                src="./images/marketing-270.jpg"
+                alt="Фотографія"
+              />
 
-                <source
-                  srcset="
-                    ./images/marketing_tablet-354.jpg    1x,
-                    ./images/marketing_tablet@2x-708.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/marketing_mobile-450.jpg    1x,
-                    ./images/marketing_mobile@2x-900.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-
-                <img src="./images/marketing-270.jpg" alt="Фотографія" />
-              </picture>
               <div class="team">
                 <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -409,33 +371,20 @@
             </li>
 
             <li class="member__item">
-              <picture>
-                <source
-                  srcset="
-                    ./images/ui-designer-270.jpg    1x,
-                    ./images/ui-designer@2x-540.jpg 2x
-                  "
-                  media="(min-width:360px)"
-                />
+              <img
+                srcset="
+                  ./images/ui-designer-270.jpg           270w,
+                  ./images/ui-designer_tablet-354.jpg    354w,
+                  ./images/ui-designer_mobile-450.jpg    450w,
+                  ./images/ui-designer@2x-540.jpg        540w,
+                  ./images/ui-designer_tablet@2x-708.jpg 708w,
+                  ./images/ui-designer_mobile@2x-900.jpg 900w
+                "
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
+                src="./images/ui-designer-270.jpg"
+                alt="Фотографія"
+              />
 
-                <source
-                  srcset="
-                    ./images/ui-designer_tablet-354.jpg    1x,
-                    ./images/ui-designer_tablet@2x-708.jpg 2x
-                  "
-                  media="(min-width:768px)"
-                />
-
-                <source
-                  srcset="
-                    ./images/ui-designer_mobile-450.jpg    1x,
-                    ./images/ui-designer_mobile@2x-900.jpg 2x
-                  "
-                  media="(min-width:1200px)"
-                />
-
-                <img src="./images/ui-designer-270.jpg" alt="Фотографія" />
-              </picture>
               <div class="team">
                 <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text">UI Designer</p>

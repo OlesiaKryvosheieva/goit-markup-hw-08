@@ -2,14 +2,16 @@
   display: none;
 
   @media screen and (min-width: 1200px) {
+    padding-top: 47px;
+    padding-bottom: 94px;
     display: block;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .our-work {
-    padding-top: 47px;
-    padding-bottom: 94px;
+    
+    
 
     &.list {
       display: flex;

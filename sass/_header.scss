@@ -1,0 +1,318 @@
+.header {
+  border-bottom: 1px solid #ececec;
+  position: relative;
+
+  &-link {
+    margin-right: 93px;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    padding-left: 15px;
+
+    @media screen and (min-width: 768px) {
+      margin-right: 87px;
+      padding-left: 0;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 92px;
+    }
+  }
+}
+
+.logo {
+  color: $accent-color;
+}
+
+.menu-toggle {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.js-open-menu {
+  padding-right: 10px;
+}
+
+.js-close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.js-close-menu:hover svg,
+.js-close-menu:focus svg {
+  fill: $accent-color;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    min-height: 60px;
+  }
+
+  @media screen and (min-width: 768px) {
+    min-height: 0;
+  }
+}
+
+.menu-container {
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: #fff;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.site-nav {
+  padding-top: 48px;
+  padding-left: 40px;
+  margin-bottom: 302px;
+
+  & .link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: $primary-text-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    & .item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    padding-top: 0;
+    padding-left: 0;
+    margin-bottom: 0;
+
+    & .item + .item {
+      margin-left: 50px;
+    }
+
+    & .link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      color: $primary-text-color;
+
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+    }
+
+    & .link.current {
+      position: relative;
+      color: $accent-color;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & .link {
+      display: block;
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      color: $primary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.42;
+      letter-spacing: 0.02em;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    &.current {
+      position: relative;
+      color: $accent-color;
+    }
+  }
+}
+
+.contact-nav {
+  padding-left: 40px;
+  margin-bottom: 64px;
+
+  & .mail {
+    color: $secondary-text-color;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  & .phone {
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  @media screen and (max-width: 767px) {
+    & .item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    margin-left: auto;
+
+    & .phone,
+    & .mail {
+      display: flex;
+
+      align-items: center;
+      color: $secondary-text-color;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+
+      letter-spacing: 0.02em;
+
+      text-decoration: none;
+
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      padding-left: 0;
+
+      &:hover,
+      &:focus {
+        color: $accent-color;
+      }
+    }
+
+    & .mail {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    justify-content: center;
+    align-items: center;
+
+    & .phone,
+    & .mail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .mail {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.mail-icon,
+.smartphone-icon {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    fill: currentColor;
+    display: block;
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+}
+
+.current::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  background-color: $accent-color;
+  border-radius: 2px;
+}
+
+.header-social {
+  display: flex;
+  padding-left: 40px;
+  padding-bottom: 48px;
+
+  & .item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+
+  & .item:not(:first-child) {
+    padding-left: 10px;
+  }
+
+  & .link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+
+    letter-spacing: 0.02em;
+
+    color: $accent-color;
+    text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

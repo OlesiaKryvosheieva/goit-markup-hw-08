@@ -1,0 +1,61 @@
+.our-work-section {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-work {
+    padding-top: 47px;
+    padding-bottom: 94px;
+
+    &.list {
+      display: flex;
+    }
+
+    & .item:not(:last-child) {
+      display: block;
+      margin-right: 30px;
+    }
+
+    &-title {
+      margin-bottom: 50px;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 1.2;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+
+    &-wrapper {
+      position: relative;
+    }
+
+    &-pic {
+      display: block;
+    }
+
+    &-text {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-weight: 700;
+
+      line-height: 1.14;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+
+      color: $tertiary-text-color;
+      background: rgba(47, 48, 58, 0.8);
+
+      padding-top: 27px;
+      padding-bottom: 27px;
+      margin-top: 0;
+    }
+  }
+}

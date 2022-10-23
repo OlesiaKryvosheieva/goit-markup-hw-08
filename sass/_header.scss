@@ -36,14 +36,9 @@
   border: none;
   background-color: transparent;
 
-
-
   @media screen and (min-width: 768px) {
     display: none;
-    
   }
-
-  
 }
 
 .js-open-menu {
@@ -76,10 +71,8 @@
 }
 
 .menu-container {
-
   &.is-open {
     display: block;
-    
   }
 
   @media screen and (max-width: 767px) {
@@ -103,7 +96,6 @@
 }
 
 .nav-wrap {
-  
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -112,16 +104,16 @@
   padding-top: 48px;
   padding-left: 40px;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     padding-top: 0;
     padding-left: 0;
- 
-  align-items: center;
-  }
 
- 
+    align-items: center;
+
+    width: 100%;
+  }
 }
 
 .site-nav {
@@ -172,7 +164,6 @@
   }
 
   @media screen and (min-width: 1200px) {
-    
     & .link {
       display: block;
       padding-top: 32px;
@@ -234,7 +225,7 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
-    
+
     margin-left: auto;
 
     & .phone,
@@ -268,8 +259,8 @@
   @media screen and (min-width: 1200px) {
     padding-top: 32px;
     padding-bottom: 32px;
-
-    
+    display: flex;
+    flex-direction: row;
 
     justify-content: center;
     align-items: center;

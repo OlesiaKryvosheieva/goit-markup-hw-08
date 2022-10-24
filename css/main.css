@@ -950,6 +950,19 @@ h3 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .combine-block {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .combine-block {
+    display: flex;
+  }
+}
+
 .first-block {
   display: flex;
   flex-direction: column;
@@ -988,9 +1001,8 @@ h3 {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .second-block {
-    position: absolute;
-    right: 74px;
-    padding-top: 5px;
+    justify-content: flex-start;
+    padding-right: 72px;
   }
 }
 @media screen and (min-width: 1200px) {

@@ -208,20 +208,30 @@
           <h2 class="crew__title">Наша команда</h2>
           <ul class="member list">
             <li class="member__item">
-              <img
-                srcset="
-                  ./images/product-designer-270.jpg           270w,
-                  ./images/product-designer_tablet-354.jpg    354w,
-                  ./images/product-designer_mobile-450.jpg    450w,
-                  ./images/product-designer@2x-540.jpg        540w,
-                  ./images/product-designer_tablet@2x-708.jpg 708w,
-                  ./images/product-designer_mobile@2x-900.jpg 900w
-                "
-                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
-                src="./images/product-designer-270.jpg"
-                alt="Фотографія"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/product-designer-270.jpg    1x,
+                    ./images/product-designer@2x-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/product-designer_tablet-354.jpg    1x,
+                    ./images/product-designer_tablet@2x-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/product-designer_mobile-450.jpg    1x,
+                    ./images/product-designer_mobile@2x-900.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/product-designer-270.jpg" alt="Фотографія" />
+              </picture>
               <div class="team">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -262,20 +272,33 @@
             </li>
 
             <li class="member__item">
-              <img
-                srcset="
-                  ./images/frontend-developer-270.jpg           270w,
-                  ./images/frontend-developer_tablet-354.jpg    354w,
-                  ./images/frontend-developer_mobile-450.jpg    450w,
-                  ./images/frontend-developer@2x-540.jpg        540w,
-                  ./images/frontend-developer_tablet@2x-708.jpg 708w,
-                  ./images/frontend-developer_mobile@2x-900.jpg 900w
-                "
-                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
-                src="./images/frontend-developer-270.jpg"
-                alt="Фотографія"
-              />
-
+              <picture>
+                <source
+                  srcset="
+                    ./images/frontend-developer-270.jpg    1x,
+                    ./images/frontend-developer@2x-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer_tablet-354.jpg    1x,
+                    ./images/frontend-developer_tablet@2x-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/frontend-developer_mobile-450.jpg    1x,
+                    ./images/frontend-developer_mobile@2x-900.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img
+                  src="./images/frontend-developer-270.jpg"
+                  alt="Фотографія"
+                />
+              </picture>
               <div class="team">
                 <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -316,20 +339,30 @@
             </li>
 
             <li class="member__item">
-              <img
-                srcset="
-                  ./images/marketing-270.jpg           270w,
-                  ./images/marketing_tablet-354.jpg    354w,
-                  ./images/marketing_mobile-450.jpg    450w,
-                  ./images/marketing@2x-540.jpg        540w,
-                  ./images/marketing_tablet@2x-708.jpg 708w,
-                  ./images/marketing_mobile@2x-900.jpg 900w
-                "
-                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
-                src="./images/frontend-developer-270.jpg"
-                src="./images/marketing-270.jpg"
-                alt="Фотографія"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/marketing-270.jpg    1x,
+                    ./images/marketing@2x-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing_tablet-354.jpg    1x,
+                    ./images/marketing_tablet@2x-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/marketing_mobile-450.jpg    1x,
+                    ./images/marketing_mobile@2x-900.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/marketing-270.jpg" alt="Фотографія" />
+              </picture>
 
               <div class="team">
                 <h3 class="team__title">Микола Тарасов</h3>
@@ -371,19 +404,30 @@
             </li>
 
             <li class="member__item">
-              <img
-                srcset="
-                  ./images/ui-designer-270.jpg           270w,
-                  ./images/ui-designer_tablet-354.jpg    354w,
-                  ./images/ui-designer_mobile-450.jpg    450w,
-                  ./images/ui-designer@2x-540.jpg        540w,
-                  ./images/ui-designer_tablet@2x-708.jpg 708w,
-                  ./images/ui-designer_mobile@2x-900.jpg 900w
-                "
-                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (min-width:480) 450px, 100wv"
-                src="./images/ui-designer-270.jpg"
-                alt="Фотографія"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/ui-designer-270.jpg    1x,
+                    ./images/ui-designer@2x-540.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer_tablet-354.jpg    1x,
+                    ./images/ui-designer_tablet@2x-708.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/ui-designer_mobile-450.jpg    1x,
+                    ./images/ui-designer_mobile@2x-900.jpg 2x
+                  "
+                  media="(min-width: 480px)"
+                />
+                <img src="./images/ui-designer-270.jpg" alt="Фотографія" />
+              </picture>
 
               <div class="team">
                 <h3 class="team__title">Михайло Єрмаков</h3>
@@ -482,73 +526,71 @@
     <footer class="footer">
       <div class="container end section">
         <div class="combine-block">
+          <div class="first-block">
+            <a href="" class="footer-link" lang="en"
+              ><span class="logo">Web</span>Studio</a
+            >
+            <address>
+              <ul class="footer-adress list">
+                <li class="item">
+                  <a
+                    href="https://goo.gl/maps/QpKXPvB4J1D9XDTR9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="address"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="mailto:info@devstudio.com" class="footer-contact"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="item">
+                  <a href="tel:+380961111111" class="footer-contact"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="second-block">
+            <p class="text">Приєднуйтесь</p>
+            <ul class="list footer-list">
+              <li class="footer-item">
+                <a href="" class="link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
 
-        <div class="first-block">
-          <a href="" class="footer-link" lang="en"
-            ><span class="logo">Web</span>Studio</a
-          >
-          <address>
-            <ul class="footer-adress list">
-              <li class="item ">
-                <a
-                  href="https://goo.gl/maps/QpKXPvB4J1D9XDTR9"
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  class="address"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+              <li class="footer-item">
+                <a href="" class="link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item ">
-                <a href="mailto:info@devstudio.com" class="footer-contact"
-                  >info@devstudio.com</a
-                >
+
+              <li class="footer-item">
+                <a href="" class="link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="item ">
-                <a href="tel:+380961111111" class="footer-contact"
-                  >+38 096 111 11 11</a
-                >
+
+              <li class="footer-item">
+                <a href="" class="link">
+                  <svg class="footer-icon" width="20" height="20">
+                    <use href="./images/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="second-block">
-          <p class="text">Приєднуйтесь</p>
-          <ul class="list footer-list">
-            <li class="footer-item">
-              <a href="" class="link">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-item">
-              <a href="" class="link">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-item">
-              <a href="" class="link">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="footer-item">
-              <a href="" class="link">
-                <svg class="footer-icon" width="20" height="20">
-                  <use href="./images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-      </div>
         <div class="third-block">
           <p class="text">Підпишіться на розсилку</p>
           <form class="signature">

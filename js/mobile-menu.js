@@ -3,7 +3,11 @@
   const openMenuBtn = document.querySelector('.js-open-menu');
   const closeMenuBtn = document.querySelector('.js-close-menu');
 
-  const toggleMenu = () => menuContainer.classList.toggle('is-open');
+  const toggleMenu = () => {
+    menuContainer.classList.toggle('is-open');
+    document.body.classList.toggle("no-scroll");
+  }
+
   openMenuBtn.addEventListener('click', toggleMenu);
   closeMenuBtn.addEventListener('click', toggleMenu);
 
